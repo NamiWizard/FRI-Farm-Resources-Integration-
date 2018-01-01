@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="utf-8">
+  <meta namt="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Modern Wizard Studio, https://modernwizard.pro">
+  <meta name="copyright" content="Copyright c 2017 Modern Wizard Studio. All Rights Reserved.">
+  <title>Hello HTML</title>
+  <!--
+  <link rel="shortcut icon" href="fav.ico">
+  <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png">
+  -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <style>
+    html, body {
+        height: 100%;
+    }
+    
+    div, span, p, h1, h2, h3, a, button  {
+        font-family: "Microsoft JhengHei";
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .vamiddle {
+        text-align:center;
+        letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+        *letter-spacing: normal; /* reset IE < 8 */
+        *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+        text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+    }
+    
+    .vamiddle::before {
+        content:'';
+        width:0px;
+        height:100%;
+        display:inline-block;
+        position:relative;
+        vertical-align:middle;
+    }
+    
+    .vamiddle > .vamiddle-container {
+        vertical-align:middle;
+        display:inline-block;
+        width: 100%;
+    }
+    
+    .primary-color {
+        color:#384D48;
+    }
+    /*body {
+        background-image: url("bg.jpg");
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        height: 100%;
+    }*/
+    div {
+       background: #ffffff;  
+           
+    }
+    h1 {
+        font-size: 1.5em;
+        letter-spacing:1.2em;
+    }
+    bg
+    {
+        padding: 25px;
+        width: 50px;
+        color: red;   
+    }
+    h2 {
+        font-size: 1em;
+        letter-spacing:0.5em;
+    }
+     h3 {
+        font-size: 0.7em;
+        letter-spacing:0.3em;
+    }
+
+    .entiry-btn {
+        font-family: "Microsoft JhengHei";
+        font-size: 0.7em;
+        letter-spacing:0.3em;
+        background: none;
+        border: solid #000;
+        border-width: 0 1px;
+    }
+
+    .tmpHeightAndColor1 {
+        height:350px;
+        background-color: #78D5D7;
+    }
+
+    .tmpHeightAndColor2 {
+        height:100px;
+        background-color: white;
+    }
+
+    .tmpHeightAndColor3 {
+        height:100px;
+        background-color: red;
+    }
+    .tmpHeightAndColor4 {
+        height:5px;
+        background-color:yellow;
+    }
+       .tmpHeightAndColor5 {
+        height:300px;
+        background-color:pink;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1-1 tmpHeightAndColor1">
+
+        </div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1-2 ">
+            <p>帳號登入</p>
+            <label for="帳號">帳號</label>
+            <input id="帳號" class="pure-u-8-24" type="text">
+            <p> </p>
+            <label for="密碼">密碼</label>
+            <input id="密碼" class="pure-u-8-24" type="text">
+            <p> </p>
+            <label for="terms" class="pure-checkbox">
+                <input id="terms" type="checkbox"> 每次自動登錄
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">登錄</button>
+            <button type="submit" class="pure-button pure-button-primary">建立新帳號</button>
+        </div>
+
+        <div class="pure-u-1-2">
+            <p>使用其他帳號登入</p>
+            <label for="其他帳號">使用其他帳號登錄</label>
+            <select id="其他帳號">
+                <option>Facebook</option>
+                <option>Google</option>
+            </select>
+        </div>
+        
+    </div>
+</body>
+</html>
